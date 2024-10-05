@@ -1,0 +1,45 @@
+import { NavLink, Outlet } from "react-router-dom";
+
+const Portfolio = () => {
+
+    const projects = [1, 2, 3, 4, 5];
+
+  return (
+    <div className="flex gap-4">
+        <div className="flex flex-col gap-5">
+            {projects.map((project) => (
+                <NavLink
+                key={project}
+                to={`/projects/${project}`}
+                className={({isActive}) => {
+                    return isActive ? "text-blue-600 text-5xl" : "text-white text-5xl"
+                }}
+                >
+                    Project {project}
+                </NavLink>
+            ))}
+        </div>
+        <Outlet />
+    </div>
+  )
+}
+
+export default Portfolio
+
+
+
+
+
+<div className="video-container relative lg:h-full w-full my-8 lg:overflow-hidden rounded-3xl bg-slate-200">
+    <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    width="100%"
+    className="absolute lg:top-[50%] lg:translate-y-[-50%] rounded-3xl w-full bg-cover bg-"
+    >
+    <source src={ABOUT.video} type="video/mp4" />
+    </video>
+    <Link to={'/portfolio'} className="absolute top-4 left-5 bg-white text-primary z-20 px-5 py-1 rounded-3xl lg:text-lg">Our Projects</Link>
+</div>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  scroll-behavior: smooth;
+  /* box-sizing: border-box; */
+  /* padding: 0px 20px; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
+.john {
+  transform: translateX(100%);
+}
+
+.arrow {
+  transition: .5s ease-out;
+}
+
+.hero-btn:hover .arrow {
+  margin-left: 20px;
+  transition: .5s ease-out;
+}
