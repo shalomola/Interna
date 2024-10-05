@@ -3,7 +3,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 import { LINKS } from "../constants/data.tsx"
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

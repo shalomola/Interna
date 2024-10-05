@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar.tsx";
-import Hero from "../components/sections/hero.tsx";
-import About from "../components/sections/about.tsx";
+import Hero from "../components/sections/Hero.tsx";
+import About from "../components/sections/About.tsx";
 import Contact from "../components/sections/Contact.tsx";
 import Video from "../components/sections/Video.tsx";
 

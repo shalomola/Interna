@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-const Navlinks = (props) => {
+// Define the type for props
+interface NavlinksProps {
+  to: string;  // The 'to' property should be a string, as used in NavLink
+  name: string;  // The 'name' property should also be a string
+}
+
+const Navlinks: React.FC<NavlinksProps> = (props) => {
   return (
     <NavLink
       className={({ isActive }) =>
