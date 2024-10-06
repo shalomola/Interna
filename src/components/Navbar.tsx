@@ -37,7 +37,7 @@ const Navbar = () => {
   };
   
   return (
-    <div className="w-full bg-white flex justify-between items-center z-30 fixed top-0 left-0 box-border py-2 px-3 lg:px-10">
+    <div className="w-full bg-white flex justify-between items-center z-[1000] fixed top-0 left-0 box-border py-2 px-3 lg:px-10">
       <h1 className="text-black text-xl font-semibold">Interna</h1>
       <div className="z-40">
         {window.innerWidth > 0 ? (
