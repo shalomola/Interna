@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import { ABOUT } from "../../constants/data";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 const About = () => {
 
