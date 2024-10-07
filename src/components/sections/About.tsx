@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import { ABOUT } from "../../constants/data";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const About = () => {
+
   return (
     <div className="w-full h-[120vh] lg:h-[100vh] box-border lg:pt-16 lg:pb-10 px-3 mt-10 lg:px-10 mb-10">
       <div className="w-full h-full lg:flex justify-between">
@@ -28,17 +31,33 @@ const About = () => {
         </div>
         <div className="w-full flex flex-col justify-between lg:w-[58%] h-[60%] lg:h-full lg:flex lg:flex-row lg:justify-between">
           <div 
-            className="bg-slate-500 w-full h-[55%] lg:h-full lg:w-[43%]"
+            className="relative bg-slate-500 w-full h-[55%] lg:h-full lg:w-[43%] overflow-hidden"
             style={{
               background: `url(${ABOUT.image1}) no-repeat center center / cover`,
             }}
-          ></div>
+          >
+            <motion.div 
+              className="absolute w-full h-full bg-white z-10"
+              initial={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: "-100%" }}
+              transition={{ ease: "circInOut", duration: 2, delay: 0 }}
+              viewport={{ once: true }}
+              ></motion.div>
+          </div>
           <div 
-            className="bg-slate-500 w-full h-[43%] lg:h-full lg:w-[55%]"
+            className="relative bg-slate-500 w-full h-[43%] lg:h-full lg:w-[55%] overflow-hidden"
             style={{
               background: `url(${ABOUT.image2}) no-repeat center bottom / cover`,
             }}
-          ></div>
+          >
+            <motion.div 
+              className="absolute w-full h-full bg-white z-10"
+              initial={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: "100%" }}
+              transition={{ ease: "circInOut", duration: 2, delay: 0 }}
+              viewport={{ once: true }}
+              ></motion.div>
+          </div>
         </div>
       </div>
     </div>

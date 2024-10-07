@@ -35,7 +35,7 @@ import project20 from "../assets/project20.jpeg";
 
 import aboutImage1 from "../assets/abt.png";
 import aboutImage2 from "../assets/abt2.png";
-import video from "../assets/video.mp4";
+import video from "../assets/internavid.mp4";
 
 import m1 from "../assets/m1.jpg";
 import m2 from "../assets/m2.jpg";

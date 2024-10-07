@@ -13,7 +13,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ ease: "linear", duration: 0.5, delay: 3 }}
             viewport={{ once: true }}
-            className="hero-img lg:absolute top-0 left-0 lg:ml-10 w-full h-full lg:w-[45%] lg:h-[92%] box-border flex justify-end"
+            className="hero-img lg:absolute top-0 left-0 lg:ml-0 w-full h-full lg:w-[45%] lg:h-[92%] box-border flex justify-end"
             style={{
               background: `url(${HERO.imgSrc}) no-repeat center bottom / cover`,
             }}
